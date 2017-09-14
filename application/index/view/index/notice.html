@@ -1,0 +1,25 @@
+
+{extend name="public:base"/}
+{block name="content"}
+<div class="container-fluid">
+
+
+
+    {volist name="datas" id="data"}
+    <div class="row noticeList">
+        <a href="{:url('index/notices',['id'=>$data.id])}">
+            <div class="col-xs-2">
+                <img class="noticeImg" src="{:get_file_path($data.logo)}" />
+            </div>
+            <div class="col-xs-10">
+                <p class="title">{$data.title}</p>
+                <p class="intro">{$data.title}</p>
+                <p class="info">浏览:{$data.views}<span class="pull-right">{$data.start_time}</span> </p>
+            </div>
+        </a>
+    </div>
+    {/volist}
+
+</div>
+
+{/block}

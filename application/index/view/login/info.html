@@ -1,0 +1,10 @@
+{extend name="public:base"/}
+{block name="content"}
+<div class="container-fluid">
+    <div class="blank"></div>
+    <h3 class="noticeDetailTitle"><strong>{$Think.session.userinfo.name}</strong></h3>
+    <div class="noticeDetailInfo">电话：{$Think.session.userinfo.tel}</div>
+    <a href="{:url('index/login/edit',['id'=>$Think.session.userinfo.id])}">修改</a>
+</div>
+{/block}
+

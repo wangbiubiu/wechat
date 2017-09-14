@@ -1,0 +1,19 @@
+{extend name="public:base"/}
+{block name="content"}
+<table class="table">
+
+    <tr>
+        <th>报修单号</th>
+    <th>处理情况</th>
+        <th>报修详情</th>
+    </tr>
+    {volist name="row" id="data"}
+    <tr>
+        <td>{$data.code}</td>
+        <td>{$data.status}</td>
+        <td>{$data.title}</td>
+    </tr>
+    {/volist}
+</table>
+
+{/block}

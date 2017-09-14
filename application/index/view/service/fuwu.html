@@ -1,0 +1,15 @@
+{extend name="public:base"/}
+{block name="content"}
+    <div class="container-fluid">
+        <div class="indexImg row">
+            <img src="/public/index/image/3.png" width="100%" />
+        </div>
+        <div class="blank"></div>
+        <div class="container">
+            <ul class="list-group fuwuList">
+                <li class="list-group-item"><a href="{:url('service/index')}" class="text-danger"><span class="iconfont">&#xe604;</span>调查问卷</a> </li>
+                <li class="list-group-item"><a href="{:url('index/online/auth')}" class="text-info"><span class="iconfont">&#xe605;</span>业主认证</a></li>
+            </ul>
+        </div>
+    </div>
+{/block}
